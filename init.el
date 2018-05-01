@@ -8,9 +8,6 @@
 
 (load "~/.emacs.d/lisp/mlzmxy_emacs_init.el")
 
-;; company-mode
-;; To use company-mode in all buffers
-(add-hook 'after-init-hook 'global-company-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

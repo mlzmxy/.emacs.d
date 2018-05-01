@@ -121,6 +121,10 @@ version 2016-04-04"
 ;; Turn on syntax coloring
 (setq org-src-fontify-natively t)
 
+;; company-mode
+;; To use company-mode in all buffers
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; Helm Settings
 (global-set-key (kbd "M-x") #'helm-M-x)
 (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
