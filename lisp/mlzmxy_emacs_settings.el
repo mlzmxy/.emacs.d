@@ -11,8 +11,20 @@
 
 ;; auto insert closing bracket
 (electric-pair-mode 1)
+
 ;; turn on bracket match highlight
-(show-paren-mode 1)
+(progn
+  (show-paren-mode 1)
+
+  ;; highlight brackets
+  ;(setq show-paren-style 'parenthesis)
+
+  ;; highlight entire expressionq
+  ;(setq show-paren-style 'expression)
+
+  ;; highlight brackets if visible, else entire expression
+  (setq show-paren-style 'mixed))
+
 
 ;; turn on highlighting curent line
 (global-hl-line-mode 1)
@@ -71,17 +83,17 @@
   (define-key (cdr ido-minor-mode-map-entry) [remap write-file] nil))
 
 ;; Icomplete Mode
-(progn
+;(progn
   ;; minibuffer enhanced completion
-  (require 'icomplete)
-  (icomplete-mode 1)
+;  (require 'icomplete)
+;  (icomplete-mode 1)
   ;; show choices vertically
-  (setq icomplete-separator "\n")
-  (setq icomplete-hide-common-prefix nil)
-  (setq icomplete-in-buffer t)
+;  (setq icomplete-separator "\n")
+;  (setq icomplete-hide-common-prefix nil)
+;  (setq icomplete-in-buffer t)
 
-  (define-key icomplete-minibuffer-map (kbd "<right>") 'icomplete-forward-completions)
-  (define-key icomplete-minibuffer-map (kbd "<left>") 'icomplete-backward-completions))
+;  (define-key icomplete-minibuffer-map (kbd "<right>") 'icomplete-forward-completions)
+;  (define-key icomplete-minibuffer-map (kbd "<left>") 'icomplete-backward-completions))
 
 
 ;; Open Recently Opened File
@@ -108,3 +120,11 @@ version 2016-04-04"
 ;; Org Mode
 ;; Turn on syntax coloring
 (setq org-src-fontify-natively t)
+
+;; Helm Settings
+(global-set-key (kbd "M-x") #'helm-M-x)
+(global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
+(global-set-key (kbd "C-x C-f") #'helm-find-files)
+(helm-mode 1)
+;(helm-linum-relative-mode 1)
+
