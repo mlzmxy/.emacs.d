@@ -131,4 +131,3 @@ version 2016-04-04"
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 (helm-mode 1)
 ;(helm-linum-relative-mode 1)
-
