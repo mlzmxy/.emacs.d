@@ -125,9 +125,18 @@ version 2016-04-04"
 ;; To use company-mode in all buffers
 (add-hook 'after-init-hook 'global-company-mode)
 
+;; yasnippet settings
+(add-to-list 'load-path
+                "~/.emacs.d/snippets/")
+   (require 'yasnippet)
+   (yas-global-mode 1)
+
 ;; Helm Settings
 (global-set-key (kbd "M-x") #'helm-M-x)
 (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 (helm-mode 1)
 ;(helm-linum-relative-mode 1)
+
+;;Window-numbering mode
+(window-numbering-mode 1)
