@@ -1,13 +1,10 @@
 ;;; window-numbering-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
-(add-to-list 'load-path (directory-file-name
-                         (or (file-name-directory #$) (car load-path))))
-
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "window-numbering" "window-numbering.el" (0
-;;;;;;  0 0 0))
+;;;### (autoloads nil "window-numbering" "window-numbering.el" (23352
+;;;;;;  35200 524908 446000))
 ;;; Generated autoloads from window-numbering.el
 
 (defvar window-numbering-mode nil "\
@@ -25,14 +22,11 @@ A minor mode that assigns a number to each window.
 
 \(fn &optional ARG)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "window-numbering" '("window-numbering-" "select-window-by-number")))
-
 ;;;***
 
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; window-numbering-autoloads.el ends here
