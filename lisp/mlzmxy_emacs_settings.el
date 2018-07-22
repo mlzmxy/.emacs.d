@@ -4,6 +4,19 @@
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 
+;; set default frame size
+(setq default-frame-alist '((width . 80) (height . 30)))
+
+;; 去掉工具栏
+(tool-bar-mode 0)
+;;去掉菜单栏
+(menu-bar-mode 0)
+;; 去掉滚动栏
+(scroll-bar-mode 0)
+
+;; set default font
+(set-frame-font "Noto Sans Mono CJK SC" 14)
+
 ;; MELPA
 (require 'package)
 (add-to-list 'package-archives '("melpa"
@@ -27,7 +40,7 @@
 
 
 ;; turn on highlighting curent line
-(global-hl-line-mode 1)
+;(global-hl-line-mode 1)
 
 ;; Show Line Numbers
 ;; linum-mode
