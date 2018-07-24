@@ -6,7 +6,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(load "~/.emacs.d/site-lisp/mlzmxy_emacs_init.el")
+(load "~/.emacs.d/site-lisp/config/mlzmxy_emacs_init.el")
 
 
 (custom-set-variables
