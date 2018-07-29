@@ -17,6 +17,8 @@
 (menu-bar-mode 0)
 ;; 去掉滚动栏
 (scroll-bar-mode 0)
+;;关掉音效
+(setq ring-bell-function 'ignore)
 
 ;; show time
 (display-time-mode 1)
