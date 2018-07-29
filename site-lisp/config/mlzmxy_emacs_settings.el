@@ -18,6 +18,10 @@
 ;; 去掉滚动栏
 (scroll-bar-mode 0)
 
+;; show time
+(display-time-mode 1)
+(setq display-time-24hr-format t)
+
 ;; set default font
 (set-frame-font "Noto Sans Mono CJK SC" 14)
 
