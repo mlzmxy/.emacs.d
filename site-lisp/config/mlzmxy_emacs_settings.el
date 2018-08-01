@@ -25,7 +25,7 @@
 (setq display-time-24hr-format t)
 
 ;; set default font
-(set-frame-font "Noto Sans Mono CJK SC" 14)
+(set-frame-font "Noto Sans Mono CJK SC 12")
 
 ;; MELPA
 (require 'package)
@@ -163,3 +163,7 @@ version 2016-04-04"
 
 ;;Window-numbering mode
 (window-numbering-mode 1)
+
+
+;;Swiper
+(global-set-key "\C-s" 'swiper)

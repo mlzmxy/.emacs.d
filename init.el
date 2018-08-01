@@ -8,7 +8,6 @@
 
 (load "~/.emacs.d/site-lisp/config/mlzmxy_emacs_init.el")
 
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -17,7 +16,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (magit ghub magit-popup window-numbering yasnippet linum-relative helm company))))
+    (swiper-helm swiper paredit magit ghub magit-popup window-numbering yasnippet linum-relative helm company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
